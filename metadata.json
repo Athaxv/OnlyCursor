@@ -1,0 +1,7 @@
+{
+  "name": "Vantage AI Cursor Suite",
+  "description": "A high-fidelity implementation of the Vantage UI aesthetic featuring three AI-powered cursor modes: VisionSnap, Clarify, and Navigator, powered by Google Gemini.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

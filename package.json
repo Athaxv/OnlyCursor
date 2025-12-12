@@ -1,0 +1,41 @@
+{
+  "name": "ai-cursor",
+  "version": "1.0.0",
+  "description": "Sundial AI Cursor System Utility",
+  "main": "dist/overlay/main.js",
+  "bin": {
+    "ai-cursor": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build:renderer": "vite build",
+    "build:main": "tsc -p tsconfig.node.json",
+    "build:native": "node-gyp rebuild",
+    "build": "npm run build:native && npm run build:renderer && npm run build:main",
+    "start": "electron dist/overlay/main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "install-native": "node-gyp rebuild"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^5.3.0",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4",
+    "uiohook-napi": "^1.5.4",
+    "node-addon-api": "^7.1.0",
+    "bindings": "^1.5.0"
+  },
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.0",
+    "@types/node": "^20.11.16",
+    "node-gyp": "^10.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.1"
+  },
+  "gypfile": true
+}

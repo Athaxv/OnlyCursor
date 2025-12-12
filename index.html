@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vantage AI Cursors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Instrument Serif"', 'serif'],
+              sans: ['"Inter"', 'sans-serif'],
+            },
+            colors: {
+              sundial: {
+                bg: '#FDF4F0',
+                card: '#F9F7F5',
+                dark: '#1A1A1A',
+                accent: '#E6D5D0',
+                purple: '#EADFFF',
+                red: '#FFEEEE',
+                text: '#2D2D2D'
+              }
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        cursor: none; /* Hide default cursor to use custom ones */
+        background-color: #FDF4F0;
+      }
+      /* Custom scrollbar to match aesthetic */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FDF4F0;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #E6D5D0;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #D1C0BB;
+      }
+      .cursor-target {
+        cursor: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "html2canvas": "https://esm.sh/html2canvas@1.4.1",
+    "socket.io": "https://esm.sh/socket.io@^4.8.1",
+    "socket.io-client": "https://esm.sh/socket.io-client@^4.8.1",
+    "path": "https://esm.sh/path@^0.12.7",
+    "child_process": "https://esm.sh/child_process@^1.0.2",
+    "http": "https://esm.sh/http@^0.0.1-security",
+    "electron": "https://esm.sh/electron@^39.2.6",
+    "chalk": "https://esm.sh/chalk@^5.6.2",
+    "commander": "https://esm.sh/commander@^14.0.2",
+    "uiohook-napi": "https://esm.sh/uiohook-napi@^1.5.4"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
