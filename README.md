@@ -1,171 +1,165 @@
-🔮 AI Cursor — Your Always-On Screen Intelligence Layer
+# 🔮 AI Cursor — Your Always-On Screen Intelligence Layer
 
-We added superpowers to your cursor.
+We added superpowers to your cursor.  
 You can sleep — but your cursor won’t.
 
-AI Cursor transforms your operating system’s pointer into a multimodal AI assistant that understands your screen, your voice, and your workflow.
-This is not a UI trick. It’s a new interaction model for your entire computer.
+AI Cursor transforms your operating system’s pointer into a multimodal AI assistant that understands your screen, your voice, and your workflow.  
+This is not a UI trick — it’s a new interaction model for the entire computer.
 
-✨ Features
-🖼️ 1. VisionSnap Mode — The Extraction Engine
+---
 
+## ✨ Features
+
+### 🖼️ VisionSnap Mode — The Extraction Engine  
 Capture anything on your screen and extract meaning instantly.
 
-Drag-and-select regions
+- Drag-and-select regions  
+- Click on images, graphs, UI elements  
+- Extract text, numbers, tables, URLs  
+- Auto-copy insights to clipboard  
+- Powered by **Gemini Vision**
 
-Click on images, graphs, UI elements
+Perfect for students, researchers, developers, and teams working with visual data.
 
-Extract text, numbers, tables, URLs
+---
 
-Auto-copy insights to clipboard
+### ✍️ Clarify Mode — Real-Time Intelligence Layer  
+Hover over any text on your screen and the cursor understands it instantly.
 
-Powered by Gemini Vision
+- Summaries  
+- Rewrites  
+- Spell-fixes  
+- Explanations  
+- Tone adjustments  
 
-Perfect for students, researchers, developers, and anyone who deals with visual data.
+This transforms the cursor into a live editor, explainer, and language assistant powered by **Gemini Text**.
 
-✍️ 2. Clarify Mode — Real-Time Intelligence Layer
+---
 
-Hover over any text on your screen and the cursor understands it.
+### 🎙️ Navigator Mode — Voice-Activated Copilot  
+Hold the **spacebar** and ask questions about anything you point at.
 
-Summaries
+- “Explain this graph.”  
+- “What does this button do?”  
+- “Rewrite this paragraph professionally.”  
+- “Simplify this documentation.”  
 
-Rewrites
+AI Cursor listens, interprets your screen context, and provides meaningful responses through audio or text using **Gemini Audio**.
 
-Spell-fixes
+---
 
-Explanations
+### 🎨 Dynamic Custom Cursors  
+Each AI mode has its own animated cursor style:
 
-Tone adjustments
+- Hover  
+- Processing  
+- Listening  
+- Active  
+- Error  
+- Success  
 
-The cursor becomes an always-available editor and explainer, powered by Gemini Text.
+These custom animations make the cursor feel alive — delivering a futuristic, high-quality user experience.
 
-🎙️ 3. Navigator Mode — Voice-Activated Copilot
+---
 
-Hold the spacebar and ask questions about anything you point at.
+### 🧠 Multimodal AI Integration  
+The system uses **three different Gemini capabilities**, combined to understand anything you:
 
-“Explain this graph.”
+| Capability | Purpose |
+|-----------|---------|
+| **Vision** | Screen capture, OCR, UI understanding |
+| **Text** | Summaries, rewrites, explanations |
+| **Audio** | Voice commands, contextual responses |
 
-“What does this button do?”
+The cursor doesn’t just move — it **sees, thinks, and responds**.
 
-“Rewrite this paragraph professionally.”
+---
 
-“Simplify this documentation.”
+### 🌈 High-Fidelity User Interface  
+Includes a premium landing page designed with:
 
-AI Cursor listens, interprets context, and responds via audio and text using Gemini Audio.
+- Glassmorphism  
+- Micro-interactions  
+- Smooth animations  
+- Instrument Serif + Inter typography  
+- A clean, modern SaaS layout  
 
-🎨 4. Dynamic Custom Cursors
+Inspired by Apple-level design principles.
 
-Each mode has its own animated cursor:
+---
 
-Hover
+## 🚀 Getting Started
 
-Processing
+> **Note:** This is a system-level cursor engine.  
+> It does **not** run inside a browser — it interacts directly with the operating system.
 
-Listening
+### 1. Clone the repository
 
-Active
-
-Error
-
-Success
-
-Feels futuristic and fluid — like a first-party Apple feature.
-
-🧠 5. Multimodal AI Integration
-
-The project uses three different Gemini capabilities:
-
-Capability	Usage
-Vision	Screen capture, OCR, region understanding
-Text	Summaries, rewrites, instructions
-Audio	Voice commands, conversational responses
-
-Together, they allow the cursor to see, think, and respond.
-
-🎨 6. Premium UI & Design
-
-This project includes a fully responsive landing page featuring:
-
-Glassmorphism
-
-Micro-interactions
-
-Beautiful typography (Instrument Serif + Inter)
-
-Elegant animations
-
-High-fidelity visuals
-
-Built to feel as polished as an Apple or Raycast product.
-
-🚀 Getting Started
-
-Note: This is a system-level cursor engine.
-It is not a browser component.
-It interacts with the OS itself (overlay, hooks, AI models).
-
-1. Clone the repo
+```bash
 git clone https://github.com/yourname/ai-cursor
 cd ai-cursor
-
-2. Install dependencies
+```
+```
 pnpm install
-
-3. Start the development system
+```
+```
 pnpm dev
-
-4. Build
+```
+```
 pnpm build
+```
 
 🧩 Tech Stack
-Core
-
-System-level overlay engine
+Core Engine
 
 Custom cursor rendering pipeline
 
-Chromium canvas/WebGL for animations
+System-level overlay window
 
 Global mouse hooks
 
-Native OS integrations (Windows/macOS/Linux)
+Native OS event integration (Windows/macOS/Linux)
 
-AI
+AI Models
 
-Gemini Vision API
+Gemini Vision
 
-Gemini 2 Flash / Pro (Text)
+Gemini Text
 
-Gemini Audio for speech queries
+Gemini Audio
 
 Frontend
 
-React + Tailwind
+React
+
+Next.js (Landing Page)
+
+TailwindCSS
 
 Framer Motion
 
-Next.js (for landing page)
-
-Dev Tools
-
-Vite / Turbo / PNPM
+Tooling
 
 TypeScript
 
-Electron (optional for overlay)
+Turbo / PNPM
+
+Vite
+
+Electron (optional overlay layer)
 
 🔧 How It Works (Architecture Overview)
 1. Capture Layer
 
-Handles screen regions and screenshot → passes to Vision model.
+Screenshots, UI regions, and selections → sent to VisionSnap for extraction.
 
-2. Pointer Layer
+2. Pointer Engine
 
-A fully custom pointer engine that overrides the OS cursor visually.
+A custom-built cursor layer replaces the OS cursor visually.
 
 3. Overlay Layer
 
-A transparent system-wide overlay displaying animated cursors and AI responses.
+Transparent system overlay displays the AI cursor, hints, and responses.
 
 4. AI Worker Layer
 
@@ -173,7 +167,7 @@ Handles:
 
 Vision extraction
 
-Summaries and rewrites
+Summaries & rewrites
 
 Voice queries
 
@@ -187,35 +181,46 @@ Clarify
 
 Navigator
 
+Depending on user input and screen context.
+
 📌 Roadmap
 
-Cross-platform installer
+Universal desktop app installer
 
-AI-powered gesture recognition
+Gesture recognition
 
-Auto-actions (e.g., click workflows)
+Auto-actions (AI-driven clicks and workflows)
 
-On-device model support
+On-device AI model support
 
-Developer API for custom modes
+Developer plugin system
 
 Marketplace for custom cursor themes
 
 🏆 Why This Project Matters
 
-This project introduces a new interface paradigm:
+This project introduces a new computing paradigm:
 
 Instead of opening an app to use AI,
 you simply point at what you want —
-the cursor understands and helps.
+and your cursor understands it.
 
-It brings AI into the most universal UX element of all:
-the pointer.
+It elevates the most basic computer interaction — the cursor — into an intelligent assistant.
 
-📜 License
+💬 Feedback & Contributions
 
-MIT License (or your preferred license)
+For feedback, feature requests, or contributions:
+Open an issue or start a discussion on GitHub.
 
-💬 Contact / Feedback
 
-For feedback or contributions, please open an issue or send a message.
+---
+
+If you'd like, I can also:  
+✅ Add badges (version, build, license, PRs welcome)  
+✅ Add installation instructions for macOS/Windows/Linux  
+✅ Add screenshots + GIFs  
+✅ Add a logo header for the README  
+
+Just tell me!
+
+
